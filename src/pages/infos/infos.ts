@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'infos.html',
 })
 export class InfosPage {
+  artistaNaTela;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.artistaNaTela = this.navParams.get('artista');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfosPage');
   }
+
+  
 
 }
