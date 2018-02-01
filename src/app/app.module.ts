@@ -8,19 +8,23 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PraiasPageModule } from '../pages/praias/praias.module';
-import { MapasPageModule } from '../pages/mapas/mapas.module';;
+import { MapasPageModule } from '../pages/mapas/mapas.module';
+import { InfosPageModule } from '../pages/infos/infos.module';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    TabsPage
+    TabsPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     PraiasPageModule,
-    MapasPageModule
+    MapasPageModule,
+    InfosPageModule
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [

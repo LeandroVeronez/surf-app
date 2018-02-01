@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'infos.html',
 })
 export class InfosPage {
+  localNaTela;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.localNaTela = this.navParams.get('lugar');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfosPage');
   }
+
+  
 
 }
