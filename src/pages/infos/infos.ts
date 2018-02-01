@@ -14,10 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'infos.html',
 })
 export class InfosPage {
-  artistaNaTela;
+  localNaTela;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.artistaNaTela = this.navParams.get('artista');
+    this.localNaTela = this.navParams.get('lugar');
   }
 
   ionViewDidLoad() {

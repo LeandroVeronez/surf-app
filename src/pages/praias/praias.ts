@@ -15,8 +15,8 @@ import { InfosPage } from '../infos/infos';
   templateUrl: 'praias.html',
 })
 export class PraiasPage {
-  artistas = [
-    {nome: 'Christopher G. Wallace', nomeArtistico:'NOTORIOUS B.I.G.', genero: 'Rapp', img:'https://www.alux.com/wp-content/uploads/2017/06/Notorious-B.I.G-Net-Worth.jpg', historia:'Biggie Smalls, also known as "The Notorious B.I.G.," was a revered hip-hop artist and face of East Coast gangsta rap. He was shot and killed on March 9, 1997.'},
+  lugares = [
+    {pais: 'Brasil', local: 'Ubatuba', img:'', historia:'ushushs'},
   ];
     
 
@@ -29,9 +29,10 @@ export class PraiasPage {
 
   irParaInfos(item){
     let parametros = {
-      artista:item
+      lugar:item
     };
     this.navCtrl.push(InfosPage, parametros);
+    console.log(parametros);
   }
 
   
