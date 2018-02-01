@@ -15,4 +15,10 @@
 
 <ion-content padding>
 
+    <ion-list>
+        <button ion-item *ngFor="let lugar of lugares" (click)="irParaInfos(lugar)">
+          {{lugar.local}}
+        </button>
+        </ion-list>
+
 </ion-content>

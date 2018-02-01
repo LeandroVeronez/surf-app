@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InfosPage } from '../infos/infos';
 
 /**
  * Generated class for the PraiasPage page.
@@ -14,6 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'praias.html',
 })
 export class PraiasPage {
+  lugares = [
+    {pais: 'Brasil', local: 'Ubatuba', img:'', historia:'ushushs'},
+  ];
+    
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -21,5 +26,15 @@ export class PraiasPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PraiasPage');
   }
+
+  irParaInfos(item){
+    let parametros = {
+      lugar:item
+    };
+    this.navCtrl.push(InfosPage, parametros);
+    console.log(parametros);
+  }
+
+  
 
 }
