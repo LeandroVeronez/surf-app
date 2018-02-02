@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{localNaTela.local}}</ion-title>
+    <ion-title>Infos</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,8 +15,18 @@
 
 <ion-content padding>
 
-  <p>{{localNaTela.local}}</p>
+  <ion-card>
+    <p>{{localNaTela.historia}}</p>
+      <iframe width="560" height="315" [src]=localNaTela.video frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <ion-card-content>
+      <ion-card-title>
+        {{localNaTela.local}}
+      </ion-card-title>
 
-  <p>{{localNaTela.historia}}</p>
+
+
+    </ion-card-content>
+  </ion-card>
+
 
 </ion-content>
