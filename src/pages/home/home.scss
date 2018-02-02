@@ -1,12 +1,19 @@
 page-home {
-    ion-title{
-        text-align: center;
-    }
+ }
 
+img {
+    max-width: 100%;
 }
-
-.imgtopo{
-    max-width: 60%;
-    margin: 0 20%;
+.scroll-content{
+    background-color: rgba(18, 155, 209, 0.459);
 }
+p { text-align: justify; }
 
+.toolbar-background-md {
+    border-color: rgb(92, 78, 78);
+    background: rgb(92, 78, 78);
+}
+.toolbar-title-md {
+       color: #ffffff;
+       font-family: 'Gochi Hand', cursive;
+}
