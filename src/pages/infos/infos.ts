@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { DomSanitizer } from '@angular/platform-browser';
 /**
  * Generated class for the InfosPage page.
  *
@@ -16,8 +16,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class InfosPage {
   localNaTela;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.localNaTela = this.navParams.get('lugar');
+  constructor(public navCtrl: NavController, public navParams: NavParams, public sanitizer: DomSanitizer) {
+    let lugar = this.navParams.get('lugar');
+    lugar.video = this.sanitizer.bypassSecurityTrustResourceUrl(lugar.video);
+    this.localNaTela = lugar;
   }
 
   ionViewDidLoad() {
