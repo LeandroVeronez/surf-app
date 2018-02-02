@@ -7,21 +7,37 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Infos</ion-title>
+    <ion-title>{{localNaTela.pais}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
 
+
+<ion-content padding>
+  
   <ion-card>
+
+    <ion-card-title>
+      {{localNaTela.local}}
+    </ion-card-title>
+
+    <br>
+
+    <iframe width="100%" height="400" [src]=localNaTela.video frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
     <p>{{localNaTela.historia}}</p>
-      <iframe width="560" height="315" [src]=localNaTela.video frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+    <br>
+
+    
+    <button ion-button icon-only>
+        <ion-icon name="ios-map-outline"></ion-icon>
+    </button>
+
     <ion-card-content>
-      <ion-card-title>
-        {{localNaTela.local}}
-      </ion-card-title>
 
 
 
@@ -30,3 +46,8 @@
 
 
 </ion-content>
+
+
+
+
+

@@ -6,6 +6,7 @@ import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     MapasPage,
+    
   ],
   imports: [
     IonicPageModule.forChild(MapasPage),
