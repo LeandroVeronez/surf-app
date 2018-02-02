@@ -5,15 +5,20 @@ img {
     max-width: 100%;
 }
 .scroll-content{
-    background-color: rgba(18, 155, 209, 0.459);
+    background-color: rgba(14, 114, 153, 0.685);
 }
 p { text-align: justify; }
 
 .toolbar-background-md {
-    border-color: rgb(92, 78, 78);
-    background: rgb(92, 78, 78);
+    // border-color: rgb(43, 41, 41);
+    // background: rgb(43, 41, 41);
 }
 .toolbar-title-md {
-       color: #ffffff;
-       font-family: 'Gochi Hand', cursive;
+       color: black;
+       font-family: 'Original Surfer', cursive;
+       font-size: 30px;
+}
+
+ion-title{
+    text-align: center;
 }
